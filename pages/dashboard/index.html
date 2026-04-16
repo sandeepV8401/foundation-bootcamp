@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .dash-container {
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 500px;
+            /* margin: 0 auto; */
+            flex: 1;
+            margin-left: 250px;
+            margin-top: 60px;
+        }
+
+        .head {
+            /* background-color: blanchedalmond; */
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            padding: 6px;
+        }
+
+        .kpi-cards {
+            /* width: 100%;
+            height: 250px; */
+            /* background-color: blanchedalmond; */
+            padding: 6px;
+            height: auto;
+        }
+
+        .recent-activity {
+            width: 100%;
+            height: 100px;
+            /* background-color: gray; */
+            padding: 6px;
+        }
+
+        .status-board {
+            width: 100%;
+            height: 100px;
+            /* background-color: blanchedalmond; */
+            padding: 6px;
+        }
+
+        .chat-button {
+            width: 100%;
+            height: 50px;
+            /* background-color: blanchedalmond; */
+            padding: 6px;
+        }
+
+        .card {
+            display: grid;
+            /* width: 500px; */
+            /* width: 100%; */
+            /* max-width: 500px; */
+            /* margin: 0 auto; */
+            padding: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            align-items: stretch;
+            /* background-color: beige; */
+        }
+
+        .card-layout {
+            /* width: 150px; */
+            /* height: 140px; */
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 5px;
+            gap: 20px;
+
+        }
+
+        .card-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-total {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .card-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="dashboard">
+        <div class="dash-container">
+            <div class="head">
+                <div>Title</div>
+                <div>Date</div>
+                <div>User</div>
+                <div>Filter<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            </div>
+            <div class="kpi-cards">
+                <div>KPI Cards</div>
+                <div>
+                    <div class="card">
+                        <div class="enquiry card-layout">
+                            <div class="card-head">
+                                <div>Enquires</div>
+                                <div>10</div>
+                            </div>
+                            <div class="card-data">
+                                <div class="meta">
+                                    <span class="label">Open</span>
+                                    <span class="value">8</span>
+                                </div>
+                                <div class="meta">
+                                    <span class="label">Closed</span>
+                                    <span class="value">6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quotation card-layout">
+
+                            <div class="card-head">
+                                <div>Enquires</div>
+                                <div>10</div>
+                            </div>
+                            <div class="card-data">
+                                <div class="meta">
+                                    <span class="label">Open</span>
+                                    <span class="value">8</span>
+                                </div>
+                                <div class="meta">
+                                    <span class="label">Closed</span>
+                                    <span class="value">6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="po card-layout">
+                            <div class="card-head">
+                                <div>Enquires</div>
+                                <div>10</div>
+                            </div>
+                            <div class="card-data">
+                                <div class="meta">
+                                    <span class="label">Open</span>
+                                    <span class="value">8</span>
+                                </div>
+                                <div class="meta">
+                                    <span class="label">Closed</span>
+                                    <span class="value">6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deal card-layout">
+                            <div class="card-head">
+                                <div>Enquires</div>
+                                <div>10</div>
+                            </div>
+                            <div class="card-data">
+                                <div class="meta">
+                                    <span class="label">Open</span>
+                                    <span class="value">8</span>
+                                </div>
+                                <div class="meta">
+                                    <span class="label">Closed</span>
+                                    <span class="value">6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recent-activity">
+                <div>RECENT ACTIVITY</div>
+                <div>• New enquiry #1234</div>
+                <div>• Quote sent to ABC Corp</div>
+                <div>• PO #PO-456 uploaded</div>
+            </div>
+            <div class="status-board">
+                <div>LIVE STATUS BOARD</div>
+                <div>Pipeline Flow</div>
+                <div>🟢 Enquiry (127) → 🟡 Quote (23) → 🔵 PO (8)</div>
+
+            </div>
+            <div class="chat-button">
+                <button>Chat</button>
+            </div>
+    </section>
+</body>
+
+</html>

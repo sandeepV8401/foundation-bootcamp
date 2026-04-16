@@ -1,0 +1,22 @@
+┌──────────────────────────────────────────────┐
+│ DASHBOARD HEADER                             │  ← FIX ADDED
+│ Title: Dashboard        Date/User/Filter     │
+├──────────────────────────────────────────────┤
+│                                              │
+│ ┌──────── KPI GRID (4 CARDS) ─────────┐      │
+│ │ Total Enquiries     Pending Quotes  │      │
+│ │ PO Received         Active Deals    │      │
+│ └──────────────────────────────────────┘      │
+│                                              │
+│ ┌──────── RECENT ACTIVITY ────────────┐      │
+│ │ • New enquiry #1234                │      │
+│ │ • Quote sent to ABC Corp           │      │
+│ │ • PO #PO-456 uploaded              │      │
+│ └──────────────────────────────────────┘      │
+│                                              │
+│ ┌──────── LIVE STATUS BOARD ──────────┐      │
+│ │ Pipeline Flow                       │      │
+│ │ 🟢 Enquiry (127) → 🟡 Quote (23)    │      │
+│ │ 🔵 PO (8)                          │      │
+│ └──────────────────────────────────────┘      │
+└──────────────────────────────────────────────┘

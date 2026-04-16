@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            display: grid;
+            /* width: 500px; */
+            /* width: 100%; */
+            /* max-width: 500px; */
+            /* margin: 0 auto; */
+            padding: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            background-color: beige;
+        }
+
+        .card-layout {
+            width: 150px;
+            height: 140px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .card-total {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .card-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="enquiry card-layout">
+                <div class="card-head">Enquires</div>
+                <div class="card-total">10</div>
+                <div class="card-data">
+                    <div class="meta">
+                        <span class="label">Open</span>
+                        <span class="value">8</span>
+                    </div>
+                    <div class="meta">
+                        <span class="label">Closed</span>
+                        <span class="value">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quotation card-layout">
+                <div>Quotation</div>
+                <div class="card-total">8</div>
+                <div class="card-data">
+                    <div class="meta">
+                        <span class="label">Open</span>
+                        <span class="value">8</span>
+                    </div>
+                    <div class="meta">
+                        <span class="label">Closed</span>
+                        <span class="value">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="po card-layout">
+                <div>PO</div>
+                <div class="card-total">5</div>
+                <div class="card-data">
+                    <div class="meta">
+                        <span class="label">Open</span>
+                        <span class="value">8</span>
+                    </div>
+                    <div class="meta">
+                        <span class="label">Closed</span>
+                        <span class="value">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deal card-layout">
+                <div>Deals</div>
+                <div class="card-total">7</div>
+                <div class="card-data">
+                    <div class="meta">
+                        <span class="label">Open</span>
+                        <span class="value">8</span>
+                    </div>
+                    <div class="meta">
+                        <span class="label">Closed</span>
+                        <span class="value">6</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

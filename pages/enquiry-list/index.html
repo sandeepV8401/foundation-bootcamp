@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .enquiry-list-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+
+        .enquiry-list-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 12px;
+            margin-bottom: 32px;
+        }
+
+        .right {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .filter {
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search {
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .data-table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        td:last-child a {
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="enquiry-list-section">
+        <div class="enquiry-list-container">
+            <div class="head">
+                <div class="left">
+                    <p>+ New Enquiry</p>
+                </div>
+                <div class="right">
+                    <div class="filter">
+                        <label>Filter</label>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="search">
+
+                        <form class="search-bar">
+                            <input type="text" placeholder="search..." />
+                        </form>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Enquiry #</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1234</td>
+                            <td>ABC Corp</td>
+                            <td>🟢 Open</td>
+                            <td>High</td>
+                            <td>
+                                <a href="#">View</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1235</td>
+                            <td>XYZ Corp</td>
+                            <td>🟡 Quoted</td>
+                            <td>Low</td>
+                            <td>
+                                <a href="#">View</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

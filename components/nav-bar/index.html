@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-bar {
+            background-color: beige;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 6px;
+            align-items: center;
+            height: 60px;
+        }
+
+        .nav-logo {
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+        }
+
+        .nav-logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .nav-center {
+            flex: 1;
+            /* background-color: blanchedalmond; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 6px;
+
+        }
+
+        .search-bar {
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 400px;
+            padding: 5px 8px;
+            border-radius: 6px;
+
+        }
+
+        .nav-right {
+            /* background-color: aliceblue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+            gap: 8px;
+        }
+
+        .notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-right img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <img src="../../assets/images/logo.avif" alt="logo">
+            </div>
+            <div class="nav-center">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <form class="search-bar">
+                    <input type="text" placeholder="search..." />
+                </form>
+            </div>
+            <div class="nav-right">
+                <div class="notification">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <span>(3)</span>
+                </div>
+
+                <div class="profile-data">
+                    <p>Sandeep<span>(Sales)</span>
+
+                    </p>
+                </div>
+                <div class="profile-pic">
+                    <img src="../../assets/images/profile-pic.avif" alt="profile-pic" />
+                    <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+
+
+            </div>
+
+        </nav>
+    </header>
+</body>
+
+</html>

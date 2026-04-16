@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .side-bar {
+            width: 1200px;
+            /* background-color: aqua; */
+            display: flex;
+            margin: 60px auto;
+        }
+
+        .side-bar-container {
+            width: 200px;
+            background-color: beige;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .menu a {
+            display: flex;
+            justify-content: start;
+            gap: 8px;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="side-bar">
+        <div class="side-bar-container">
+            <div class="menu">
+                <a href="#">
+                    <i class="fa fa-dashcube" aria-hidden="true"></i>
+                    <p>Dashboard</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+                    <p>Enquires</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <p>Quotations</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <p>PO</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                    <p>Chat</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <p>Profile</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

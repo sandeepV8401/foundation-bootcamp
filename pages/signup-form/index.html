@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .signup-form-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* width:70%;
+            margin:0 auto; */
+            gap: 60px;
+            padding: 18px;
+        }
+
+        .form {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 6px 32px;
+        }
+
+        .form button {
+            padding: 6px;
+            width: 70%;
+            margin: 12px auto;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            /* gap: 12px; */
+        }
+
+        .input input {
+            padding: 6px;
+        }
+        .select-role{
+            display:flex;
+            gap:12px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="signup-form-section">
+        <div class="signup-form">
+            <div class="top">
+                <p>Signup Form</p>
+
+            </div>
+            <form class="form">
+                <div class="select-role">
+                    <label>Role</label>
+                    <select>
+                        <option value="sales">Sales</option>
+                        <option value="admin">Admin</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Email" />
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" />
+                </div>
+                <div class="input">
+                    <label>Re-enter password</label>
+                    <input type="password" placeholder="Enter Password" />
+                </div>
+
+
+
+
+
+
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

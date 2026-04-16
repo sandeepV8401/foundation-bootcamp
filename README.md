@@ -1,110 +1,59 @@
-# foundation-bootcamp
-Frontend foundation bootcamp covering HTML, CSS, JavaScript, DOM, and API integration with hands-on daily builds.
+# 🚀 Foundation Bootcamp (SalesFlow CRM UI System)
 
-# 🚀 Frontend Foundation Bootcamp
+A pure **HTML + CSS based UI bootcamp project** designed to master real-world CRM interface building using a structured system of **34 UI pieces**.
 
-This repository documents my structured frontend learning journey where I built core fundamentals of web development using HTML, CSS, and JavaScript.
-
----
-
-## 🎯 Goal
-
-To build strong frontend fundamentals by focusing on:
-
-- Semantic HTML structure
-- CSS layout and styling systems
-- JavaScript fundamentals
-- DOM manipulation
-- Event handling
-- API integration
+This is the **foundation layer** before moving into MERN + Socket + SaaS-level development.
 
 ---
 
-## 🧠 What I Learned
+## 🎯 Objective
 
-### 🟢 HTML + CSS
-- Semantic tags (header, main, section, footer)
-- Forms and inputs
-- Box model (margin, padding, border)
-- Flexbox layout system
-- Component-based UI thinking
-- Spacing and visual hierarchy
+Build a complete CRM-style UI system (SalesFlow Nexus) using:
 
----
-
-### 🟡 JavaScript
-- Variables and functions
-- Arrays and loops
-- DOM manipulation
-- Event handling
-- State-like behavior
-- Local storage
+- 34 UI Pieces (Pages + Components + System UI)
+- Pure HTML + CSS (No frameworks)
+- Learn → Practice → Build workflow
+- Production-like UI thinking from day 1
 
 ---
 
-### 🔵 API Integration
-- fetch API basics
-- async/await
-- JSON handling
-- API → UI data binding
-- Error handling
+## 🧠 Learning Approach
 
----
-
-## 🧱 Projects Built
-
-### ✅ Todo App
-- Add / Delete tasks
-- Mark complete
-- Local storage persistence
-
----
-
-### 🌦️ Weather App
-- API-based data fetching
-- City search
-- Dynamic UI updates
-- Error handling
-
----
-### 🟣 Final Phase (Stability & Polish)
-
-- UI re-render consistency
-- Input validation (empty / invalid inputs)
-- Edge case handling
-- Debugging and error tracing
-- UI polish (spacing, alignment, hierarchy)
-- Full app testing and rebuild
-
-## 📁 Structure
-
-- `day-01 → day-14` → Todo App + fundamentals
-- `day-15 → day-27` → Weather App + API integration
-
----
-
-## ⚡ Key Highlights
-
-✔ Daily hands-on learning  
-✔ Built projects from scratch (no tutorials copy)  
-✔ Strong focus on fundamentals  
-✔ Clean and structured code  
-
----
+This repository follows a **progressive bootcamp approach** where I am building skills step-by-step instead of jumping directly into complex projects.
 
 ## 🚀 Outcome
 
-This bootcamp helped me build a strong base in frontend development and prepared me to move into React and full-stack development.
+This bootcamp is helping me build a strong base in frontend development and preparing me for full-stack development.
 
 ---
 
 ## 📌 Status
 
-🚧 In Progress (Day 1 of 27)
+🚧 In Progress
+
+## 🔗 Active Step
+
+### 🟢 Phase 1: Foundation
+
+- HTML, CSS, JavaScript
+- DOM, events, API basics
+- Goal: Strong frontend fundamentals
 
 ---
 
-## 🔗 Next Step
+## 🔗 Next Steps
 
-Moving to MERN stack development and building full-stack applications.
+### 🔴 Phase 2: Advanced MERN (Base Project-SalesFlow CRM)
 
+- Real-world architecture
+- Authentication (JWT)
+- API design
+- Real-time features (Socket.io)
+
+---
+
+### 🚀 Phase 3: Final Project (SalesFlow CRM)
+
+- End-to-end SaaS application
+- Real-time collaboration
+- AI integration

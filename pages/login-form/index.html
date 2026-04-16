@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .login-form-section {
+            width: 1200px;
+            margin: 0 auto;
+            /* background-color: aquamarine */
+        }
+
+        .login-form {
+            width: 70%;
+            background-color: aliceblue;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 18px;
+            gap: 60px;
+            justify-content: space-between;
+        }
+
+        .form {
+            width:100%;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+            gap:12px;
+            padding:18px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* gap:18px; */
+
+        }
+        .form button{
+            width:60%;
+            margin:0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-form-section">
+        <div class="login-form">
+            <div class="top">
+                <p>SalesFlow CRM</p>
+            </div>
+            <div class="main">
+                <form class="form">
+                    <div class="input">
+                        <label>E-mail</label>
+                        <input type="text" placeholder="Enter Email" />
+                    </div>
+                    <div class="input">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" />
+                    </div>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

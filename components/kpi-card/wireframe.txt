@@ -1,0 +1,8 @@
+┌──────────────────────────┐
+│ ENQUIRIES               │  ← Label (small / muted)
+│                          │
+│         5               │  ← TOTAL (BIG / bold)
+│                          │
+│ ─────────────────────── │
+│ Open: 3      Closed: 2  │  ← breakdown (small text)
+└──────────────────────────┘
