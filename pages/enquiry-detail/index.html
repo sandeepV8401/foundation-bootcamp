@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Detail</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .enquiry-detail-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        .detail-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* HEADER */
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .detail-header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* CARD */
+        .detail-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background: white;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .row div {
+            width: 48%;
+        }
+
+        /* ACTIONS */
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .actions button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="enquiry-detail-section">
+        <div class="detail-container">
+
+            <!-- HEADER -->
+            <div class="detail-header">
+                <a href="#">← Back</a>
+                <span>#123 ABC Ltd</span>
+            </div>
+
+            <!-- CARD -->
+            <div class="detail-card">
+
+                <div class="row">
+                    <div>Customer: ABC Ltd</div>
+                    <div>Status: 🟢 Open</div>
+                </div>
+
+                <div class="row">
+                    <div>Requirement: Steel</div>
+                    <div>Priority: High</div>
+                </div>
+
+                <div class="actions">
+                    <button>EDIT</button>
+                    <button>💬 Chat</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
