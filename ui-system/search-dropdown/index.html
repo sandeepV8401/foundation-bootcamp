@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Dropdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .search-dropdown {
+            width: 220px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .search-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .search-item:hover {
+            background: #f3f3f3;
+        }
+
+        .search-item span {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .search-footer {
+            padding: 8px 12px;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #eee;
+            background: #fafafa;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-dropdown">
+
+        <div class="search-item">
+            <span>ABC Ltd</span>
+        </div>
+
+        <div class="search-item">
+            <span>XYZ Corp</span>
+        </div>
+
+        <div class="search-item">
+            <span>Alpha Industries</span>
+        </div>
+
+        <div class="search-footer">
+            Press Enter to select
+        </div>
+
+    </div>
+</body>
+
+</html>

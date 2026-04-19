@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Preview Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            width: 70%;
+            background: white;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 500px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="openModal()">Open PDF Preview</button>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+
+            <div class="head">
+                <strong>Quote Q123 Preview</strong>
+                <button onclick="closeModal()">X</button>
+            </div>
+
+            <!-- PDF VIEWER -->
+            <iframe class="pdf-frame" src="sample.pdf"></iframe>
+
+            <div class="actions">
+                <button onclick="window.open('sample.pdf')">Download</button>
+                <button onclick="closeModal()">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const overlay = document.getElementById("overlay");
+
+        function openModal() {
+            overlay.style.display = "flex";
+        }
+
+        function closeModal() {
+            overlay.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

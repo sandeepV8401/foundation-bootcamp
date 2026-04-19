@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Enquiry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .create-enquiry-section {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .create-enquiry-container {
+            background-color: aliceblue;
+            padding: 6px 32px;
+            display: none;
+            flex-direction: column;
+            gap: 24px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top {
+            display: grid;
+            grid-template-columns: 120px auto;
+            gap: 12px 16px;
+            align-items: center;
+        }
+
+        .top select {
+            width: 220px;
+        }
+
+        .select-customer {
+            display: flex;
+            gap: 8px;
+        }
+
+        .items {
+            background: white;
+            /* width:70%; */
+            border-radius: 6px;
+            overflow: hidden;
+            padding: 6px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .item button {
+            width: auto;
+        }
+
+        .items table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            padding: 6px 12px;
+            text-align: left;
+        }
+
+        .notes {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .action {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .action button {
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="create-enquiry-section">
+        <button id="addBtn">Add New Enquiry</button>
+        <div class="create-enquiry-container" id="overlay">
+            <div class="head">
+                <strong>Create Enquiry</strong>
+                <button id="closeBtn">Close</button>
+            </div>
+            <div class="top">
+                <label>Customer</label>
+                <div class="select-customer">
+                    <select>
+                        <option>ABC Customer</option>
+                        <option>XYZ Customer</option>
+                    </select>
+                    <button>+ New</button>
+                </div>
+
+                <label>Priority</label>
+                <select>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <div class="items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Brand</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Enter Item" />
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Brand" />
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Quantity" />
+                            </td>
+                            <td>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Add Row</button>
+            </div>
+            <div class="notes">
+                <label>Notes (optional)</label>
+                <textarea placeholder="Enter notes"></textarea>
+            </div>
+            <div class="action">
+                <button>Save as draft</button>
+                <button>Create</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const addBtn = document.getElementById("addBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const overlay = document.getElementById("overlay");
+        const cancelBtn = document.getElementById("cancelBtn");
+        addBtn.onclick = () => {
+            overlay.style.display = "flex";
+        }
+        closeBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+        cancelBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

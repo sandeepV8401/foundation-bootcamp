@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quotation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .create-quotation-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+
+        .create-quotation-container {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            padding: 6px 12px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .head {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        .items {
+            width: 90%;
+            /* background-color: beige; */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .items button {
+            align-self: center;
+            width: auto;
+            margin-top: 24px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 6px 12px;
+        }
+
+        .total {
+            width: 50%;
+            background-color: beige;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px 24px;
+            /* justify-content: end; */
+            text-align: right;
+            padding-right: 48px;
+        }
+
+        .notes {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 6px 12px;
+        }
+
+        .notes textarea {
+            width: 400px;
+        }
+
+        .action {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .action button {
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="create-quotation-section">
+        <button id="addBtn">Create New Quotation</button>
+        <div class="create-quotation-container" id="overlay">
+            <div class="top">
+                <strong>Create Quoation</strong>
+                <button id="closeBtn">Close</button>
+            </div>
+            <div class="head">
+
+                <span>Customer</span>
+                <span>ABC Pvt Ltd</span>
+
+                <span>Enquiry#</span>
+                <span>ENQ-123</span>
+
+                <span>Date</span>
+                <span>20-Apr-2026</span>
+
+            </div>
+            <div class="items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Brand</th>
+                            <th>Quantity</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sensor</td>
+                            <td>Omron</td>
+                            <td>5</td>
+                            <td>1200</td>
+                            <td>6000</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>PLC</td>
+                            <td>Siemens</td>
+                            <td>2</td>
+                            <td>8000</td>
+                            <td>16000</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Add Row</button>
+            </div>
+            <div class="total">
+
+                <span>Subtotal</span>
+                <span>22000</span>
+
+                <span>Discount</span>
+                <span>5%</span>
+
+                <span>Total</span>
+                <span>20900</span>
+            </div>
+
+            <div class="notes">
+                <label>Notes</label>
+                <textarea placeholder="Enter notes  (optional)"></textarea>
+            </div>
+            <div class="action">
+                <button>Save as draft</button>
+                <button>Generate PDF</button>
+                <button>Send</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const addBtn = document.getElementById("addBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const overlay = document.getElementById("overlay");
+        const cancelBtn = document.getElementById("cancelBtn");
+        addBtn.onclick = () => {
+            overlay.style.display = "flex";
+        }
+        closeBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+        cancelBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

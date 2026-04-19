@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Dropdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .notif-dropdown-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+
+        .notif-dropdown-container {
+            width: 200px;
+            margin: 0 auto;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 6px 12px;
+        }
+
+        .notif-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .unread {
+            font-weight: 600;
+        }
+
+        .notif-item small {
+            padding-left: 24px;
+        }
+
+        .notif-footer {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="notif-dropdown-section">
+        <div class="notif-dropdown-container">
+
+            <div class="notif-item unread">
+                <span>🔔 New Quote Created</span>
+                <small>2 min ago</small>
+            </div>
+
+            <div class="notif-item">
+                <span> 📦 PO Uploaded</span>
+                <small>10 min ago</small>
+            </div>
+
+            <div class="notif-item">
+                <span>📄 Enquiry #123 Updated</span>
+                <small>1 hr ago</small>
+            </div>
+
+            <div class="notif-footer">
+                View All Notifications
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

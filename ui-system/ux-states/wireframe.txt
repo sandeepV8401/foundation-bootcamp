@@ -1,0 +1,95 @@
+🧱 24. LOADING SKELETON
+┌──────────────────────────────┐
+│ ░░░░░░░░░░░░░░░░░░░░        │
+│ ░░░░░░░░░░░░░░░░░░░░        │
+└──────────────────────────────┘
+
+25. TYPING INDICATOR
+
+Typing
+● ● ●
+
+☰ 26. MOBILE HAMBURGER
+
+☰  →  Sidebar Toggle
+
+📭 27. EMPTY STATE
+┌──────────────────────────────┐
+│ No Enquiries Yet             │
+│                              │
+│ [+ Create First Enquiry]     │
+└──────────────────────────────┘
+
+❌ 28. ERROR STATE
+
+┌──────────────────────────────┐
+│ ❌ Something went wrong       │
+│ Please try again             │
+│                              │
+│ [ Retry ]   [ Go Home ]      │
+└──────────────────────────────┘
+
+⚠️ 29. CONFIRMATION MODAL
+
+┌──────────────────────────────┐
+│ Delete this Enquiry?         │
+│ This action cannot be undone │
+│                              │
+│ [ Delete ]   [ Cancel ]      │
+└──────────────────────────────┘
+
+📄 30. PAGINATION
+← Prev   [1] [2] [3]   Next →
+
+
+🟢 1. GLOBAL LOADER OVERLAY (loader-overlay)
+📌 Use: API call / page transition / submit
+┌──────────────────────────────────────┐
+│ │
+│ (dark overlay) │
+│ │
+│ ⟳ Loading... │
+│ │
+│ Please wait while processing │
+│ │
+└──────────────────────────────────────┘
+
+┌──────────────────────────────┐
+│        ⟳ Loading...          │
+│   Creating quotation...      │
+│                              │
+│   (progress optional)        │
+└──────────────────────────────┘
+
+🔵 3. ACTIVITY TIMELINE (CRM HISTORY TRACKER)
+📌 Use: Enquiry Detail (side panel or bottom section)
+┌──────────────────────────────┐
+│ 📍 Activity Timeline │
+├──────────────────────────────┤
+│ ● Enquiry Created │
+│ (10:30 AM) │
+│ │
+│ ● Quotation Generated │
+│ (12:10 PM) │
+│ │
+│ ● Quotation Sent │
+│ (1:00 PM) │
+│ │
+│ ● PO Received │
+│ (3:45 PM) │
+└──────────────────────────────┘
+
+🟣 4. ROLE BADGE (GLOBAL NAV IDENTITY) — FINAL WIREFRAME
+┌────────────────────────────────────────────────────┐
+│ SalesFlow        🔔 3      John ▼     [ SALES ]    │
+└────────────────────────────────────────────────────┘
+🎯 Placement (IMPORTANT)
+
+👉 Top Navbar (right side cluster)
+
+[ Notifications ] [ User Name ▼ ] [ ROLE BADGE ]
+🎨 Variants (role system mapping)
+[ SALES ]     → Blue
+[ OFFICE ]    → Green
+[ MANAGER ]   → Purple
+[ ADMIN ]     → Red (optional extension)

@@ -1,0 +1,14 @@
+┌──────────────────────────┐
+│ 🔔 Notifications         │
+├──────────────────────────┤
+│ 🔴 New Quote Created     │
+│    2 min ago            │
+│                          │
+│ 📦 PO Uploaded           │
+│    10 min ago           │
+│                          │
+│ 📄 Enquiry #123 Updated  │
+│    1 hr ago             │
+├──────────────────────────┤
+│ View All Notifications → │
+└──────────────────────────┘
