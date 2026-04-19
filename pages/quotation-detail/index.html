@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .quotation-detail-section {
+            width: 1200px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+        }
+
+        .quotation-detail-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+            gap: 18px;
+            background-color: beige;
+            padding: 6px 18px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .head-right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .detail-table {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: azure;
+
+        }
+
+        .data-table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        td:last-child a {
+            margin-right: 10px;
+        }
+
+        .action {
+            display: flex;
+            gap: 12px;
+        }
+
+        .action button,
+        .total,
+        .head button {
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="quotation-detail-section">
+        <div class="quotation-detail-container">
+            <div class="head">
+                <button> Back</button>
+                <div class="head-right">
+                    <span>Quote# Q123</span>
+                    <span>Enq# E323</span>
+                    <span>Date: 19-Apr-2026</span>
+                </div>
+
+            </div>
+
+            <div class="detail-table">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                            <th> Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sensor</td>
+                            <td>5</td>
+                            <td>1200</td>
+                            <td>6000</td>
+                            <td>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Counter</td>
+                            <td>4</td>
+                            <td>800</td>
+                            <td>3200</td>
+                            <td>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bottom">
+                <div class="total">
+                    <strong>Total:</strong>
+                    <span>Rs. 9200</span>
+                </div>
+                <div class="action">
+                    <button>Save as draft</button>
+                    <button>Export PDF</button>
+                    <button>Send</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

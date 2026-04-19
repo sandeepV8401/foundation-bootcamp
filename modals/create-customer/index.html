@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Customer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .create-customer-section {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .create-customer-container {
+            width: 40%;
+            margin: 0 auto;
+            display: none;
+            flex-direction: column;
+            gap: 24px;
+            background-color: aliceblue;
+            padding: 6px 12px;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            /* background-color: aqua; */
+            gap: 18px;
+            align-items: center;
+        }
+
+        .action {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="create-customer-section">
+        <button id="addBtn">Add New Customer</button>
+        <div class="create-customer-container" id="overlay">
+            <div class="head">
+                <strong>Add New Customer </strong>
+                <button id="closeBtn">Close</button>
+            </div>
+
+            <div class="middle">
+                <form>
+                    <div class="row">
+                        <label>Company Name*</label>
+                        <input type="text" placeholder="Company Name" />
+                    </div>
+
+                    <div class="row">
+                        <label>Purchase Office*</label>
+                        <input type="text" placeholder="Purchase Office" />
+
+                    </div>
+                    <div class="row">
+                        <label>Phone Number*</label>
+                        <input type="number" placeholder="Phone Number" />
+                    </div>
+                    <div class="row">
+                        <label>Region*</label>
+                        <input type="text" placeholder="Region" />
+                    </div>
+                    <div class="action">
+                        <button type="submit" id="saveBtn">Save</button>
+                        <button id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        const openBtn = document.getElementById("addBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        openBtn.onclick = () => {
+            overlay.style.display = "flex";
+        }
+        closeBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+        cancelBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO Upload</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .po-upload-section {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .po-upload-container {
+            width: 40%;
+            background-color: aliceblue;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 6px 12px;
+        }
+
+        .top,
+        .action {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="po-upload-section">
+        <div class="po-upload-container">
+            <div class="top">
+                <button>Back</button>
+                <span>PO for Q123</span>
+            </div>
+            <!-- <strong>Upload PO PDF:</strong> -->
+            <div class="action">
+                <label>Upload PO PDF:</label>
+                <input type="file" />
+                <button>Upload</button>
+            </div>
+            <div class="bottom">
+                <span>History: PO-001.pdf</span>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
