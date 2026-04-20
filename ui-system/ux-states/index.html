@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI Skeleton Pack</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        /* base container */
+        .section {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* simple box */
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* buttons */
+        .btn {
+            padding: 4px 10px;
+            border: 1px solid #333;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* flex helpers */
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* center */
+        .center {
+            text-align: center;
+        }
+
+        /* loader overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* typing dots */
+        .dots span {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* timeline */
+        .timeline {
+            border-left: 2px solid #ccc;
+            padding-left: 10px;
+        }
+
+        .timeline div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 24 LOADING SKELETON -->
+    <div class="section">
+        <div class="box">
+            ░░░░░░░░░░░░░░░░░░░░<br>
+            ░░░░░░░░░░░░░░░░░░░░
+        </div>
+    </div>
+
+    <!-- 25 TYPING INDICATOR -->
+    <div class="section">
+        Typing <span class="dots">● ● ●</span>
+    </div>
+
+    <!-- 26 MOBILE HAMBURGER -->
+    <div class="section">
+        ☰ → Sidebar Toggle
+    </div>
+
+    <!-- 27 EMPTY STATE -->
+    <div class="section center">
+        <div class="box">
+            No Enquiries Yet<br><br>
+            <button class="btn">+ Create First</button>
+        </div>
+    </div>
+
+    <!-- 28 ERROR STATE -->
+    <div class="section center">
+        <div class="box">
+            ❌ Something went wrong<br>
+            Please try again<br><br>
+            <button class="btn">Retry</button>
+            <button class="btn">Go Home</button>
+        </div>
+    </div>
+
+    <!-- 29 CONFIRMATION MODAL -->
+    <div class="section center">
+        <div class="box">
+            Delete this Enquiry?<br>
+            This action cannot be undone<br><br>
+            <button class="btn">Delete</button>
+            <button class="btn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- 30 PAGINATION -->
+    <div class="section pagination">
+        ← Prev
+        <div>[1] [2] [3]</div>
+        Next →
+    </div>
+
+    <!-- LOADER OVERLAY -->
+    <div class="overlay" id="loader">
+        ⟳ Loading...<br>
+        Please wait...
+    </div>
+
+    <!-- ACTIVITY TIMELINE -->
+    <div class="section">
+        <h3>Activity Timeline</h3>
+        <div class="timeline">
+            <div>● Enquiry Created (10:30 AM)</div>
+            <div>● Quotation Generated (12:10 PM)</div>
+            <div>● Quotation Sent (1:00 PM)</div>
+            <div>● PO Received (3:45 PM)</div>
+        </div>
+    </div>
+
+    <!-- ROLE BADGE NAV -->
+    <div class="section flex">
+        <div>SalesFlow</div>
+        <div>🔔 3</div>
+        <div>John ▼</div>
+        <div>[ SALES ]</div>
+    </div>
+
+</body>
+
+</html>

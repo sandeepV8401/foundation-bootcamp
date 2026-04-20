@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .chat-section {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+
+        .chat-container {
+            background-color: beige;
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            width: 30%;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 6px 12px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .display-msg {
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .action {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .input-msg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .input-msg input {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="chat-section">
+        <button id="openBtn">Chat</button>
+        <div class="chat-container" id="overlay">
+            <div class="top">
+                <div class="top-left">
+                    <strong>Chat</strong>
+                    <span>#123</span>
+                </div>
+                <button id="closeBtn">Close</button>
+            </div>
+            <div class="display-msg">
+                <div class="left">Jhon: Hi, Need Quote Update</div>
+
+
+                <div class="right">Admin: Working on it, will share asap</div>
+
+
+                <div class="left">Jhon: Hi, Need Quote Update</div>
+
+
+                <div class="right">Admin: Working on it, will share asap</div>
+            </div>
+            <div class="input-msg">
+                <input type="text" placeholder="Message type here... " />
+                <button>Send</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const openBtn = document.getElementById("openBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        openBtn.onclick = () => {
+            overlay.style.display = "flex";
+        }
+        closeBtn.onclick = () => {
+            overlay.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
